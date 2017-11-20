@@ -36,6 +36,22 @@ git hash -l feature/fun-stuff
 
 ## Install
 
+### Option 1: use `yarn` or `npm`
+
+If using [npm](https://www.npmjs.com/):
+
+```shell
+npm i -g git-hash
+```
+
+If using [Yarn](https://yarnpkg.com/):
+
+```shell
+yarn global add git-hash
+```
+
+### Option 2: manual installation
+
 1. Either [clone this repo](https://help.github.com/articles/cloning-a-repository/) or [download the zip file](https://github.com/blakek/git-hash/archive/master.zip)
 2. Add `git-hash` from this project to your $PATH
 
