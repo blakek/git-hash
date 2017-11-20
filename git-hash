@@ -1,0 +1,30 @@
+#!/bin/bash
+
+main() {
+	local ref=''
+	local command='git rev-parse'
+
+	if [[ "$1" == 'help' ]]; then
+		showHelp
+	elif [[ "$1" == '-l' || "$1" == '--long' ]]; then
+		if [[ $# == 1 ]]; then
+			ref='HEAD'
+		else
+			ref="$2"
+		fi
+	else
+		if [[ $# == 0 ]]; then
+			ref='HEAD'
+		else
+			ref="$1"
+		fi
+
+		command="${command} --short"
+	fi
+
+	command="${command} ${ref}"
+
+	$command
+}
+
+main "$@"
