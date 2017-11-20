@@ -1,5 +1,7 @@
 # git-hash
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/blakek/git-hash.svg)](https://greenkeeper.io/)
+
 > Just show the hash of a branch, tag, etc.
 
 If you need to know the hash of some git object, just run `git-hash`.
